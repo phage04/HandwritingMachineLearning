@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+            <string>AvenirNext-DemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HandwritingMachingLearning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cZa-BT-Saw">
+                                <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="Axf-lv-zjL"/>
+                                    <constraint firstAttribute="height" constant="375" id="psb-1q-2L3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the button below to PREDICT the drawing above" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAM-Tu-aFe">
+                                <rect key="frame" x="0.0" y="535" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Qi7-XI-Hhu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAy-ga-cpJ">
+                                <rect key="frame" x="0.0" y="606" width="375" height="61"/>
+                                <color key="backgroundColor" red="0.0" green="0.56583741239999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="CUa-qd-zUf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                <state key="normal" title="PREDICT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressPredictBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="87Q-o2-7Ro"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRAW ANY NUMBER FROM 0-9" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e69-xt-wr4">
+                                <rect key="frame" x="28" y="58" width="318" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="EZm-6j-eYG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.56583741239999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cZa-BT-Saw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3i0-PC-sT1"/>
+                            <constraint firstItem="e69-xt-wr4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="68k-0E-mSc"/>
+                            <constraint firstItem="e69-xt-wr4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gp6-vW-F10"/>
+                            <constraint firstItem="gAy-ga-cpJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MRG-dl-GBO"/>
+                            <constraint firstItem="cZa-BT-Saw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mf9-Ll-KNj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e69-xt-wr4" secondAttribute="trailing" constant="29" id="TGK-lr-rs7"/>
+                            <constraint firstItem="yAM-Tu-aFe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wtc-Bw-4Ww"/>
+                            <constraint firstItem="yAM-Tu-aFe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xf2-HT-N8F"/>
+                            <constraint firstItem="yAM-Tu-aFe" firstAttribute="top" secondItem="cZa-BT-Saw" secondAttribute="bottom" constant="14" id="aDq-zt-5hx"/>
+                            <constraint firstAttribute="trailing" secondItem="yAM-Tu-aFe" secondAttribute="trailing" id="bdE-Ko-LkT"/>
+                            <constraint firstItem="cZa-BT-Saw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iqk-43-isH"/>
+                            <constraint firstItem="gAy-ga-cpJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kbh-8B-mo1"/>
+                            <constraint firstItem="gAy-ga-cpJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="o3L-1m-rGd"/>
+                            <constraint firstItem="cZa-BT-Saw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="q86-xk-XxP"/>
+                            <constraint firstItem="e69-xt-wr4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="to4-Ye-gjH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="drawingImageView" destination="cZa-BT-Saw" id="34o-vj-hu2"/>
+                        <outlet property="predictionLabel" destination="yAM-Tu-aFe" id="Xqf-Gy-IRE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
